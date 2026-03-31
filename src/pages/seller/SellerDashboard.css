@@ -1,0 +1,32 @@
+.seller-container {
+  padding: 40px;
+  background-color: #f2ecec;
+  min-height: 100vh;
+  color: #000; 
+}
+
+.dashboard-title {
+  margin-bottom: 20px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-box {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.primary-btn {
+  background-color: #6b4e4e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}

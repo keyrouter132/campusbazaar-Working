@@ -1,0 +1,77 @@
+.home {
+  min-height: 100vh;
+  background-color: #fce4ec; /* your beige/pastel theme */
+}
+
+
+.home-section {
+  padding: 50px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.3;
+  max-width: 600px;
+  color: #4e1c1c;
+}
+
+
+
+.card-row-wrapper {
+  overflow-x: auto;       /* scroll only here */
+  /*padding-bottom: 10px;
+    */
+    width:100%  
+}
+
+
+.top-sellers-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.side-title {
+  min-width: 160px;
+  font-size: 28px;
+  margin: 0;
+  padding-top: 60px;  /* reduced from 125px */
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4e1c1c;
+}
+
+.view-all-btn {
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #6b4e4e;
+  color: white;
+  cursor: pointer;
+}
+
+/* Popular products section */
+.popular-products {
+  text-align: center;
+  padding: 50px;
+}
+
+.popular-title {
+  font-size: 36px; /* bigger text */
+  font-family: Georgia, 'Times New Roman', serif; /* elegant font */
+  color: #4e1c1c; /* matches your theme */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}

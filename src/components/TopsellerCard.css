@@ -1,0 +1,59 @@
+.top-seller-card {
+  width: 180px;
+  height: 220px;        /* fixed total height */
+  border-radius: 12px;
+  overflow: hidden;     /* this clips everything inside */
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  background: #fff;
+  border: 1px solid #f0e6e6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* changed from center */
+}
+
+.top-seller-image {
+  width: 180px;         /* exact card width */
+  height: 150px;        /* fixed image area */
+  object-fit: cover;    /* changed from contain — fills the box */
+  object-position: center;
+  display: block;
+  flex-shrink: 0;       /* don't let it shrink */
+}
+.top-seller-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+.top-seller-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #d4c5b8;
+}
+
+.top-seller-card p {
+  width: 100%;
+  margin: 0;
+  padding: 8px 10px;
+  background: #fdf8f8;
+  border-top: 1px solid #f0e6e6;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2c2c2a;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.top-seller-category {
+  font-size: 11px;
+  color: #888;
+  padding: 0 10px 8px;
+  text-align: center;
+  display: block;
+}

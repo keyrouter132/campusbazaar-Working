@@ -1,0 +1,31 @@
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Root should take full screen */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body cleanup */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+
+
+

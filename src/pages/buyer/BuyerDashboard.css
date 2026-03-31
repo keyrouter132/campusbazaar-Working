@@ -1,0 +1,418 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f2ecec;
+}
+
+/* SIDEBAR */
+.dashboard-sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #f0e6e6;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+}
+
+.sidebar-brand h2 {
+  font-size: 16px;
+  color: #4e1c1c;
+  margin: 0 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0e6e6;
+}
+
+.sidebar-avatar {
+  text-align: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0e6e6;
+}
+
+.avatar-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #6b4e4e;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 6px;
+}
+
+.sidebar-email {
+  font-size: 10px;
+  color: #888;
+  margin: 0 0 2px;
+  word-break: break-all;
+}
+
+.sidebar-role {
+  font-size: 10px;
+  color: #6b4e4e;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* NAV — no flex:1 so it doesn't push logout away */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-btn {
+  background: none;
+  border: none;
+  text-align: center;    /* was left — change to center */
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.sidebar-btn:hover {
+  background-color: #fdf5f5;
+  color: #6b4e4e;
+}
+
+.sidebar-btn.active {
+  background-color: #f5eeee;
+  color: #6b4e4e;
+  font-weight: 600;
+}
+
+.sidebar-divider {
+  border: none;
+  border-top: 1px solid #f0e6e6;
+  margin: 8px 0;
+}
+
+/* LOGOUT — brown like profile button */
+.logout-btn {
+  background-color: #6b4e4e;
+  border: none;
+  color: white;
+  padding: 9px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 12px;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #4e1c1c;
+}
+
+/* MAIN */
+.dashboard-main {
+  margin-left: 220px;
+  flex: 1;
+  padding: 36px 40px;
+}
+
+.dashboard-section h2 {
+  font-size: 24px;
+  color: #4e1c1c;
+  margin-bottom: 20px;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+.profile-avatar-large {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #6b4e4e;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profile-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid #f5f0f0;
+}
+
+.profile-row:last-child {
+  border-bottom: none;
+}
+
+.profile-label {
+  font-size: 13px;
+  color: #aaa;
+  min-width: 110px;
+  font-weight: 500;
+}
+
+.profile-value {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.profile-role-tag {
+  background-color: #f5eeee;
+  color: #6b4e4e;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* STATS */
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 26px;
+  color: #6b4e4e;
+  margin: 0 0 4px;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+}
+
+/* ORDERS */
+.empty-orders {
+  text-align: center;
+  margin-top: 60px;
+  color: #888;
+}
+
+.empty-orders p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.browse-btn {
+  background-color: #6b4e4e;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #f5f0f0;
+}
+
+.order-id {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 3px;
+}
+
+.order-date {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+.order-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.order-status.pending {
+  background-color: #fff8e6;
+  color: #b07d00;
+}
+
+.order-status.confirmed {
+  background-color: #e6f5ec;
+  color: #2d7a4a;
+}
+
+.order-status.completed {
+  background-color: #e6f0ff;
+  color: #2a5aab;
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.order-item-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.order-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 2px;
+}
+
+.order-item-qty {
+  font-size: 12px;
+  color: #aaa;
+  margin: 0;
+}
+
+.order-item-price {
+  margin-left: auto;
+  font-weight: 700;
+  color: #6b4e4e;
+  font-size: 14px;
+}
+
+.order-card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid #f5f0f0;
+  font-size: 13px;
+  color: #888;
+}
+
+.order-total {
+  font-weight: 700;
+  color: #4e1c1c;
+  font-size: 15px;
+}
+/* RECENTLY VIEWED */
+.recently-viewed-section {
+  margin-top: 24px;
+}
+
+.recently-viewed-section h3 {
+  font-size: 18px;
+  color: #4e1c1c;
+  margin-bottom: 16px;
+}
+
+.recently-viewed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.rv-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+
+.rv-card:hover {
+  transform: translateY(-3px);
+}
+
+.rv-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.rv-info {
+  padding: 10px 12px;
+}
+
+.rv-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rv-price {
+  font-size: 13px;
+  color: #6b4e4e;
+  font-weight: 600;
+  margin: 0;
+}

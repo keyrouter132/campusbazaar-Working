@@ -1,0 +1,89 @@
+/* PAGE CONTAINER */
+.seller-form-container {
+  padding: 40px;
+  background-color: #f2ecec;
+  min-height: 100vh;
+}
+
+/* CARD */
+.form-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.form-title {
+  margin-bottom: 25px;
+  color: #3e2f2f;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* FORM GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* LABEL */
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #3e2f2f;
+  font-size: 14px;
+}
+
+/* INPUT + TEXTAREA */
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #b8a9a9;   /* stronger border */
+  background-color: #ffffff;
+  color: #2c2c2c;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* PLACEHOLDER */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+/* FOCUS EFFECT */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border: 1.5px solid #6b4e4e;
+  box-shadow: 0 0 6px rgba(107, 78, 78, 0.25);
+}
+
+/* GLOBAL OVERRIDE (fix dark theme issues) */
+input, textarea {
+  background-color: #ffffff !important;
+  color: #2c2c2c !important;
+}
+
+/* BUTTON */
+.primary-btn {
+  background-color: #6b4e4e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

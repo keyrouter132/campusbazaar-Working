@@ -1,0 +1,121 @@
+.product-page {
+  min-height: 100vh;
+  background-color: #f2ecec;
+  padding: 40px;
+}
+
+/* Header */
+.product-header {
+  margin-bottom: 24px;
+}
+
+.product-header h2 {
+  margin: 0;
+}
+
+.product-header p {
+  color: #555;
+}
+
+/* Grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card styling 
+.product-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}*/
+.product-card {
+  width: 100%;        /* was 220px — change to this */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Fake image block (you’ll replace later with real images) */
+.product-image-placeholder {
+  height: 160px;
+  background-color: #ddd;
+}
+
+/* Card body */
+.product-info {
+  padding: 16px;
+}
+
+.product-info h3 {
+  margin: 0 0 6px 0;
+}
+
+.category {
+  color: #777;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* Button */
+.view-btn {
+  background-color: #6b4e4e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.no-results {
+  text-align: center;
+  margin-top: 80px;
+  color: #888;
+}
+
+.no-results p {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.category-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 40px;
+  margin-bottom: 24px;
+}
+
+.pill {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid #f48fb1;
+  background: white;
+  color: #5C3A2E;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.pill.active {
+  background: #5C3A2E;
+  color: white;
+  border-color: #5C3A2E;
+}
+
+.pill:hover {
+  background: #fce4ec;
+}
